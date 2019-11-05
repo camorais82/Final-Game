@@ -1,3 +1,2 @@
-permalink
-
+permalink:/index.html
 # Final-Game
