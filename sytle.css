@@ -1,3 +1,7 @@
+Body {
+    background-color: #0d1327;
+}
+
 #myCanvas { 
     background: rgb(187, 187, 187); 
     background-image: url(/images/james-doyle-2-1.gif);
@@ -7,209 +11,40 @@
     margin-top: 60px;
 };
 
-.startGame {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-};
-
-
-
-
-.titleDiv {
- display: flex;
- justify-content: center;
- height: 50px;
- margin-bottom: 5px;
-}
-.title {
- margin-right: 20px;
-}
-h1 {
- text-align: center;
- color: rgb(233, 78, 39);
- font-size: 30px;
-}
-h5 {
- font-size: 15px;
-}
-.trot {
- color: rgb(233, 78, 39);
- font-size: 20px;
-}
-.chicken {
- color: green;
-}
-.rabbit {
- color: #b47646;
-}
-.hunter {
- color: rgb(255, 1, 1);
-}
-.tele {
- color: dodgerblue;
-}
-.instructionText {
- text-align: start;
- display: flex;
- justify-content: center;
- margin-left: 200px;
-}
-.textInstructions {
- text-align: center;
-}
-#gamePlay {
- text-align: center;
- justify-content: center;
- flex-direction: column;
- text-align: center;
-}
-.rulesInstructions {
- display: flex;
- flex-direction: row;
- justify-content: space-around;
- align-items: center;
- flex-wrap: wrap;
- margin-right: 100px;
-}
-.rules {
- text-align: justify;
- display: flex;
- justify-content: center;
- margin-left: 50px;
-}
-.button {
- width: 50px;
- height: 50px;
- border-radius: 20px;
- background-color: rgb(237, 95, 49);
- text-align: center;
- margin: 10px;
- color: white;
- font-size: 10px;
- cursor: pointer;
-}
-.btnStop {
- width: 50px;
- height: 30px;
- border-radius: 20px;
- background-color: rgb(237, 95, 49);
- text-align: center;
- color: white;
-}
 #story {
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
 }
+
 .beginImage {
  background: url("./images/james-doyle-2-1.gif");
  background-repeat: no-repeat;
  display: flex;
+ margin: 0 auto;
  justify-content: center;
- width: 650px;
+ border-radius: 10px;
+ margin-top: 60px;
+ width: 730px;
  height: 550px;
 }
 .buttons {
  display: flex;
- justify-content: center;
- flex-direction: row;
+ justify-content: space-between;
+ flex-direction: column;
  flex-wrap: wrap;
  height: 500px;
 }
-.music {
- height: 70px;
- margin-top: 370px;
-}
+
 .btn {
  width: 200px;
  height: 50px;
- border-radius: 20px;
- background-color: rgb(237, 95, 49);
+ border-radius: 50px;
+    background-color: #0d1327; 
  text-align: center;
  align-items: center;
  margin: 30px;
  color: white;
  font-size: 20px;
  cursor: pointer;
-}
-.btnIns {
- width: 200px;
- height: 25px;
- border-radius: 20px;
- background-color: rgb(237, 95, 49);
- text-align: center;
- align-items: center;
- margin: 5px;
- color: white;
- font-size: 15px;
- cursor: pointer;
-}
-.btnLoose {
- width: 200px;
- height: 40px;
- border-radius: 20px;
- background-color: rgb(237, 95, 49);
- text-align: center;
- align-items: center;
- margin: 30px;
- color: white;
- font-size: 20px;
- cursor: pointer;
-}
-.btnWin {
- width: 200px;
- height: 50px;
- border-radius: 20px;
- background-color: rgb(237, 95, 49);
- text-align: center;
- align-items: center;
- color: white;
- font-size: 20px;
- cursor: pointer;
- margin-top: 60px;
-}
-#finalScreenWin {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
-}
-.finalImageWin {
- background: url("./images/wiley-fox.gif");
- background-repeat: no-repeat;
- display: flex;
- justify-content: space-between;
- align-items: center;
- flex-direction: column;
- width: 650px;
- height: 550px;
-}
-.trotWin {
- color: rgb(233, 78, 39);
- font-size: 35px;
-}
-#finalScreenLoose {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
-}
-.finalImageLoose {
- background: url("./images/fox-gif-loose.gif");
- background-repeat: no-repeat;
- display: flex;
- justify-content: space-between;
- flex-direction: column;
- width: 480px;
- height: 480px;
-}
-.startGameAgain {
- display: flex;
- flex-direction: row;
-}
-.textLoser {
- margin-bottom: 330px;
-}
-.looser {
- color: white;
- text-align: center;
 }

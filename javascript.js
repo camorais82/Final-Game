@@ -2,8 +2,8 @@ let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 let x = canvas.width/2;
 let y = canvas.height-30;
-let dx = 2;
-let dy = -2;
+let dx = 0;
+let dy = 0;
 let ballRadius = 10;
 let paddleHeight = 10;
 let paddleWidth = 75;
@@ -26,12 +26,15 @@ colisionSound.src = "./sounds/zapsplat_cartoon_bubble_pop_007_40279.mp3";
 let startGame = document.getElementById("story");
 let startButton = document.getElementById("startGamebtn");
 
+
 let canvasAppear = () => {
-    canvasLoc.style.display = "";
+    myCanvas.style.display = "";
     story.style.display = "none";
+    dx = 4;
+    dy = -4;
    };
 
-   startButton.addEventListener
+   startButton.addEventListener("click",canvasAppear);
 
 
 let bricks = [];
@@ -94,14 +97,22 @@ function collisionDetection() {
 
 
 function drawScore() {
+    ctx.shadowOffsetX = 10;
+    ctx.shadowOffsetY = 10;
+    ctx.shadowBlur = 10;
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
     ctx.font = "16px Arial";
-    ctx.fillStyle = "gold";
+    ctx.fillStyle = "black";
     ctx.fillText("score: "+score, 8, 20);
 }
 
 function drawLives() {
+    ctx.shadowOffsetX = 10;
+    ctx.shadowOffsetY = 10;
+    ctx.shadowBlur = 10;
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
     ctx.font = "16px Arial";
-    ctx.fillStyle = "gold";
+    ctx.fillStyle = "black";
     ctx.fillText("Lives: "+lives, canvas.width-65, 20);
 }
 
@@ -110,7 +121,7 @@ function drawLives() {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = "balck";
+    ctx.fillStyle = "black";
     ctx.fill();
     ctx.closePath();
 }
