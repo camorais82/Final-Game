@@ -4,7 +4,7 @@ Body {
 
 #myCanvas { 
     background: rgb(187, 187, 187); 
-    background-image: url(/images/james-doyle-2-1.gif);
+    background-image: url("./images/james-doyle-2-1.gif");
     display: flex;
     margin: 0 auto; 
     border-radius: 10px;
